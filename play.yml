@@ -6,9 +6,9 @@
   tasks:
   - name: Print vars 
     debug: 
-    msg: "{{ msg2 }}"
+      msg: "{{ msg2 }}"
   - name: Print vars 2
     debug: 
-    msg: "{{msg2}}"
+      msg: "{{msg2}}"
 
     
