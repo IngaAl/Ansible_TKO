@@ -5,8 +5,10 @@
   - msg2: "{{lookup('ansible.builtin.env', 'HOME')}}"
   tasks:
   - name: Print vars 
-    debug: msg = "{{ msg2 }}"
+    debug: 
+    msg: "{{ msg2 }}"
   - name: Print vars 2
-    debug: msg = "{{msg2}}"
+    debug: 
+    msg: "{{msg2}}"
 
     
