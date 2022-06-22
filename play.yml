@@ -1,0 +1,10 @@
+---
+- hosts: all
+  vars: 
+  - msg: "{{P1|default('No Message')}}"
+  - msg2: "{{lookup('ansible.builtin.env', 'HOME')}}"
+  tasks:
+  - name: Print P1
+    debug: var=msg2
+    debug: var=msg
+    
